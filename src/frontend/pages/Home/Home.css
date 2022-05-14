@@ -1,0 +1,20 @@
+.home__productCards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-inline: auto;
+    margin: 2rem;
+}
+
+.home__categoryCards {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem;
+    flex-wrap: wrap;
+}
+
+.home__discountCards {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+}
