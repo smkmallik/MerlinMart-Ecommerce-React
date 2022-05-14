@@ -1,0 +1,30 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.navbar__navLink {
+    text-decoration: none;
+    color: #222;
+}
+
+.navbar__navoptions {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    /* cursor: pointer; */
+}
+
+.navbar__navicons {
+    display: flex;
+    cursor: pointer;
+}
+
+.navbar__search {
+    margin-left: 4.8rem;
+    border: 1.6px solid #222;
+}
