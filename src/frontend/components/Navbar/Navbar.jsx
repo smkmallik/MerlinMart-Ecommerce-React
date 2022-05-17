@@ -1,5 +1,6 @@
 import React from 'react';
 import './Navbar.css'
+import { Link } from 'react-router-dom';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import PersonIcon from '@mui/icons-material/Person';
@@ -8,9 +9,9 @@ const Navbar = () => {
     return (
         <nav className='navbar'>
             <p className='navbar__title'>
-                <a className='navbar__navLink' href="./index.html">
+                <Link to='/'>
                     MerlinMart
-                </a>
+                </Link>
             </p>
 
             <input className='navbar__search' type="search" name="search" placeholder='Search' />
