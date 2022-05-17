@@ -1,0 +1,45 @@
+.filter__rangeSlider {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.filter__categories {
+    list-style: none;
+    padding: 0;
+    padding-left: 1rem;
+}
+
+.filter__categoryOptions {
+    padding-bottom: 0.4rem;
+}
+
+.filter__ratings {
+    list-style: none;
+    padding: 0;
+    padding-left: 1rem;
+}
+
+.filter__sortby {
+    list-style: none;
+    padding: 0;
+    padding-left: 1rem;
+}
+
+.filter__titleContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.filter__ratingOptions {
+    margin-bottom: 0.4rem;
+}
+
+.filter__ratingContainer {
+    margin-bottom: 1rem;
+}
+
+.filter__sortbyOptions {
+    margin-bottom: 0.4rem;
+}

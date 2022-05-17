@@ -3,17 +3,17 @@ import { v4 as uuid } from 'uuid';
 export const products = [
     {
         id: uuid(),
-        name: 'Apple iPhone 13',
+        title: 'Apple iPhone 13',
         price: 40
     },
     {
         id: uuid(),
-        name: 'Apple Macbook Pro',
+        title: 'Apple Macbook Pro',
         price: 80
     },
     {
         id: uuid(),
-        name: 'Apple iPad',
+        title: 'Apple iPad',
         price: 100
     }
 ]
