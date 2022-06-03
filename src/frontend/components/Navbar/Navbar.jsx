@@ -18,27 +18,31 @@ const Navbar = () => {
             <ul className='navbar__navoptions'>
                 <li className='navbar__navicons'>
                     <span>
-                        <ShoppingCartIcon />
+                        <Link to='/cart'>
+                            <ShoppingCartIcon />
+                        </Link>
                     </span>
                     <span>0</span>
                 </li>
                 <li className='navbar__navicons'>
-                    <span className='navbar__navicons'>
-                        <FavoriteIcon />
-                    </span>
-                    <span>
-                        0
-                    </span>
+                    <Link className='navbar__icon' to='/wishlist'>
+                        <span className='navbar__navicons'>
+                            <FavoriteIcon />
+                        </span>
+                        <span>
+                            0
+                        </span>
+                    </Link>
                 </li>
                 <li className='navbar__navicons'>
-                    <span>
-                        <PersonIcon />
-                    </span>
-                    <span>
-                        <a className='navbar__navLink' href=''>
-                            Log In
-                        </a>
-                    </span>
+                    <Link className='navbar__icon' to='/signin'>
+                        <span>
+                            <PersonIcon />
+                        </span>
+                        <span>
+                            Log In       
+                        </span>
+                    </Link>
                 </li>
             </ul>
         </nav>

@@ -1,0 +1,35 @@
+.login__title {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.login__form {
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    justify-content: center;
+    gap: 0.8rem;
+    
+}
+
+.login__formContainer {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.login__footerContainer {
+    display: flex;
+    gap: 1rem;
+}
+
+.login__emailContainer {
+    display: flex;
+    gap: 2rem;
+}
+
+.login__passwordContainer {
+    display: flex;
+    gap: 1.45rem;
+}

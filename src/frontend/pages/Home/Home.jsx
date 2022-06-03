@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useReducer, useEffect} from 'react';
 import './Home.css';
 import { Banner } from '../../components/Banner/Banner';
 import Title from '../../components/Title/Title';
@@ -6,6 +6,7 @@ import { ProductCard, CategoryCard, DiscountCard } from '../../components/Card/C
 import { products, categories, discounts } from '../../components/Card/CardData';
 
 export const Home = () => {
+
     return (
         <div className='home'>
             <Banner />
@@ -15,7 +16,7 @@ export const Home = () => {
             {
                 products.map(({id, title, price}) => {
                     return (
-                        <ProductCard title={title} price={price} />
+                        <ProductCard key={id} title={title} price={price} />
                     )
                 })
             }
@@ -25,7 +26,7 @@ export const Home = () => {
 
             <div className='home__categoryCards'>
                 {
-                    categories.map(category => {
+                    categories.map(category=> {
                         return <CategoryCard
                                     title={category.title}
                                 />
