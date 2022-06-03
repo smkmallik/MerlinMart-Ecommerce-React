@@ -1,6 +1,6 @@
-/* .card {
-    cursor: pointer;
-} */
+.card__product{
+    padding: 1rem;
+}
 
 .card__productInfoImage {
     display: flex;
