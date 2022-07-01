@@ -4,17 +4,20 @@ export const products = [
     {
         id: uuid(),
         title: 'Apple iPhone 13',
-        price: 40
+        price: 40,
+        rating: 3
     },
     {
         id: uuid(),
         title: 'Apple Macbook Pro',
-        price: 80
+        price: 80,
+        rating: 4
     },
     {
         id: uuid(),
         title: 'Apple iPad',
-        price: 100
+        price: 100,
+        rating: 5
     }
 ]
 

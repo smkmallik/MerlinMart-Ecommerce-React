@@ -1,11 +1,12 @@
-import axios from 'axios';
+import axios from "axios";
 
 const getProductListService = async () => {
-    const response = await axios.get('/api/products');
-    if(response.status === 200)
-        return response.data.products;
-    else
-        return false;
-}
+	const res = await axios.get("/api/products");
+	if (res.status === 200) {
+		return res.data.products;
+	} else {
+		return false;
+	}
+};
 
-export {getProductListService};
+export { getProductListService };

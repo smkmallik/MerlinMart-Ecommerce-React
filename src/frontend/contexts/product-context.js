@@ -6,7 +6,22 @@ const ProductListingContext = createContext();
 const useProductListing = () => useContext(ProductListingContext);
 
 const ProductListingProvider = ({children}) => {
-    const [productListingState, productListingDispatch] = useReducer(productListingReducer, { data: [] });
+    const [productListingState, productListingDispatch] = useReducer(
+        productListingReducer, 
+        { 
+            data: [],
+            sortBy: "",
+            categories: {
+                mobiles: false,
+                laptops: false,
+                tablets: false,
+                watches: false,
+                desktops: false
+            },
+            price: 5000,
+            rating: 1
+        }
+    );
 
     return (
         <ProductListingContext.Provider value={{productListingState, productListingDispatch}}>
