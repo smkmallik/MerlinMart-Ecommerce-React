@@ -4,7 +4,7 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 
 export const ProductCard = (props) => {
-    const {title, price} = props;
+    const {title, price, rating} = props;
     return (
         <div className='card__product'>
             <div className='card__productInfoImage'>
@@ -19,6 +19,7 @@ export const ProductCard = (props) => {
             <div className='card__productDetails'>
                 <div className='card__productDetailContent'>
                     <span>{title}</span>
+                    <span>{rating}</span>
                     <span>₹ {price}</span>
                 </div>
                 <div>
